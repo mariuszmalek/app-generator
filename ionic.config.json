@@ -1,0 +1,7 @@
+{
+  "name": "Depthz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
