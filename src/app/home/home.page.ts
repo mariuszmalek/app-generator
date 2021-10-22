@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+  constructor(private iab: InAppBrowser) {
+    const browser = this.iab.create('https://workreap.user.legal/', '_self','location=no, zoom=no');
+    browser.show();
+  }
 }
