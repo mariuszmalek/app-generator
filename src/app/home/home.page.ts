@@ -8,7 +8,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 })
 export class HomePage {
   constructor(private iab: InAppBrowser) {
-    const browser = this.iab.create('https://workreap.user.legal/', '_self','location=no, zoom=no');
+    const browser = this.iab.create('https://dev.user.legal/', '_self','location=no, zoom=no');
     browser.show();
   }
 }
