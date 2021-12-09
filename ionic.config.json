@@ -1,10 +1,7 @@
 {
-  "name": "Depthz",
-  "integrations": {
-    "capacitor": {
-      "enabled": false
+    "name": "Depthz",
+    "integrations": {
+        "cordova": {}
     },
-    "cordova": {}
-  },
-  "type": "angular"
+    "type": "angular"
 }
