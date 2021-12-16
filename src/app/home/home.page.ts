@@ -9,7 +9,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 export class HomePage {
   constructor(private iab: InAppBrowser) {
 
-    const browser = this.iab.create('https://dev.user.legal/', '_blank', 'location=no, zoom=no, toolbar=no, fullscreen=yes, hideurlbar=yes, hidenavigationbuttons=yes');
+    // const browser = this.iab.create('https://dev.user.legal/', '_blank', 'location=no, zoom=no, toolbar=no, fullscreen=yes, hideurlbar=yes, hidenavigationbuttons=yes');
+    const browser = this.iab.create('https://dev.user.legal/', '_blank', { location:"no", zoom:"no" });
     browser.show();
     
     browser.on('exit').subscribe(() => {
